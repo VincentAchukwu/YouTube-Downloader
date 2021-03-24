@@ -1,0 +1,33 @@
+{% extends "base.html" %}
+
+{% block head %}
+
+<title>Download: {{ msg[0] }}</title>
+
+{% endblock %}
+
+{% block body %}
+<br>
+<br>
+<!-- displaying the video info -->
+<h3 class="font-italic text-center text-white">{{ msg[0] }}</h3>
+<div class="jumbotron mx-auto" style="width: 55%; padding: 20; background: rgba(0, 57, 66, 0.959);">
+    <div>
+        <img src="{{ msg[4] }}" alt="thumbnail" class="vidThumb">
+    </div>
+    <div class="statContainer text-white">
+        <!-- <p class="views">{{ msg[1] }} views</p> -->
+        <p><span>Views: </span><span class="font-italic">{{ msg[1] }}</span></p>
+        <p><span>Length: </span><span class="font-italic">{{ msg[2] }}</span></p>
+        <p><span>Rating: </span><span class="font-italic">{{ msg[3] }}/5</span></p>
+    </div>
+    <div style="text-align: center;">
+        <a class="btn" href="{{ url_for('download_file') }}" download
+        style="background-color: rgb(0, 208, 223);">Download
+        <i class="fa fa-arrow-circle-down" aria-hidden="true"></i>
+    </a>
+    </div>
+
+</div>
+
+{% endblock %}
