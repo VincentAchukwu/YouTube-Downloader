@@ -22,7 +22,19 @@
         <small class="form-text" style="color: red;">{{ msg }}</small>
         {% endif %}
         <br>
-        <button class="btn" style="background-color: rgb(0, 208, 223);" type="submit">Submit
+
+        <div class="btn-group btn-group-toggle btn-block" data-toggle="buttons" style="width: 50%;">
+            <!-- once ready, change "button" to "label" and remove tooltip -->
+            <button class="btn btn-primary disabled mouseBlock" data-toggle="tooltip" data-placement="top" title="(COMING SOON)">
+                <input type="radio" name="options" value="mp3" id="option1" checked> MP3
+            </button>
+            <label class="btn btn-primary">
+                <input type="radio" name="options" value="mp4" id="option2"> MP4
+            </label>
+        </div>
+        <br>
+        <br>
+        <button class="btn" style="background-color: rgb(0, 238, 255);" type="submit">Submit
             <i class="fa fa-arrow-circle-right" aria-hidden="true"></i>
         </button>
     </div>
