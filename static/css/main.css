@@ -2,7 +2,7 @@
     padding: 0 5;
 }
 
-.navbar-nav a:hover:not(.dropdown-item){
+.navbar-nav a:hover:not(.dropdown-item) {
     background-color: rgb(162, 0, 255);
     border-radius: 7%;
     transition: 0.3s;
@@ -15,7 +15,7 @@
     width: 50%;
 }
 
-.statContainer{
+.statContainer {
     text-align: center;
     padding: 10px;
 }
@@ -23,4 +23,8 @@
 .statContainer p {
     display: inline-block;
     padding: 20px;
+}
+
+.mouseBlock:hover {
+    cursor: not-allowed;
 }
